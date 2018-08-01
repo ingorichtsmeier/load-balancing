@@ -10,10 +10,13 @@ Build it with `docker build .` and run it with `docker run -p 80:80 IMAGEID`.
 
 The cluster can be reached by [http://localhost/app/tasklist](http://localhost/app/tasklist).
 
+The spring-boot apps write their access logs to the users temp folder. On my windows machine you find them under c:\user\myUserId\AppData\Temp\tomcat.ALONGNUMBER.8082\logs. They are very helpful to see how load balancing works.
+
 ## Interesting links
 * [https://geekflare.com/tomcat-load-balancer-using-mod-proxy-and-session-sticky/](https://geekflare.com/tomcat-load-balancer-using-mod-proxy-and-session-sticky/)
 * [https://stackoverflow.com/questions/49621813/set-jvmroute-in-spring-boot-2-0-0](https://stackoverflow.com/questions/49621813/set-jvmroute-in-spring-boot-2-0-0)
 * [https://httpd.apache.org/docs/2.4/mod/mod_proxy_balancer.html](https://httpd.apache.org/docs/2.4/mod/mod_proxy_balancer.html)
+* [https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html](https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html)
 
 Some errors during httpd configuration:
 * [https://bz.apache.org/bugzilla/show_bug.cgi?id=52841](https://bz.apache.org/bugzilla/show_bug.cgi?id=52841)
