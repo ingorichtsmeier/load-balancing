@@ -1,4 +1,4 @@
-package com.camunda.consulting.sb_test2;
+package com.camunda.consulting.sb_test3;
 
 import org.apache.ibatis.logging.LogFactory;
 import org.camunda.bpm.engine.ProcessEngine;
